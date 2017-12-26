@@ -1,0 +1,89 @@
+<html>
+
+<head>
+<title>Problem 68: Number Triangles</title>
+</head>
+
+<body background="/usaco/bg3.jpg">
+<img src="/usaco/cow1.jpg" width="742" height="118">
+
+<center>
+<h1>Number Triangles</h1>
+</center>
+
+<p> Consider the number triangle shown below. Write a program that
+calculates the highest sum of numbers that can be passed on a route that
+starts at the top and ends somewhere on the base. Each step can go either
+diagonally down to the left or diagonally down to the right.
+
+<pre>
+          7
+
+        3   8
+
+      8   1   0
+
+    2   7   4   4
+
+  4   5   2   6   5
+</pre>
+
+<p> In the sample above, the route from 7 to 3 to 8 to 7 to 5 produces
+the highest sum: 30.
+
+<h3>PROGRAM NAME: numtri</h3>
+
+<h3>INPUT FORMAT</h3>
+
+The first line contains R (1 &lt;= R &lt;= 1000), the number of rows.
+Each subsequent line contains the integers for that particular row of
+the triangle.  All the supplied integers are non-negative and no larger
+than 100.
+
+<h3>SAMPLE INPUT (file numtri.in) </h3>
+
+<pre>
+5
+7
+3 8
+8 1 0
+2 7 4 4
+4 5 2 6 5
+</pre>
+
+<h3>OUTPUT FORMAT</h3>
+
+A single line containing the largest sum using the traversal
+specified.
+
+<h3>SAMPLE OUTPUT (file numtri.out)</h3>
+
+<pre>
+30
+</pre>
+<br>
+<div style='width:6.25in;background-color:#FFFFCC;border:1px solid black;'>
+<form action="/upload3" enctype="multipart/form-data" method="post"
+	style='margin-bottom:0px;'>
+<center>
+<table>
+<tr><td colspan=2><b>Submit a solution:</b></td></tr>
+<tr><td style='width:0.75in;'>&nbsp;</td><td>
+<input type="file" name="filename">
+<input type="submit" VALUE="Send it in!">
+<input type="hidden" name="a" value=1yymk9rnt0G>
+<input type="hidden" name="S" value=numtri>
+</td></tr>
+</table>
+</center>
+</div>
+</form>
+
+<div style='margin-top:1em;width:6.25in;padding:8px;background-color:white;border:1px solid black;'>
+<center>
+<a href="/usacogate?a=1yymk9rnt0G">Training Gateway</a> &nbsp;| &nbsp;
+<a href="mailto:rob.kolstad@gmail.com">Comment or Question </a>
+</center>
+</div>
+</body>
+</html>

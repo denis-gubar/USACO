@@ -1,0 +1,86 @@
+<html>
+<head> <title>Longest Prefix</title> </head>
+<body background="/usaco/bg3.jpg">
+<img src="/usaco/cow1.jpg" width="742" height="118">
+<center>
+<b><font size="7">Longest Prefix</font></b><br>
+<b>IOI'96</b>
+</center>
+
+<p>The structure of some biological objects is represented by the
+sequence of their constituents, where each part is denoted by an
+uppercase letter. Biologists are interested in decomposing a long
+sequence into shorter sequences called <i>primitives</i>.
+
+<p>We say that a sequence <b>S</b> can be composed from a given set of primitives
+<b>P</b> if there is a some sequence of (possibly repeated) primitives from
+the set whose concatenation equals S.  Not necessarily all primitives
+need be present. For instance the sequence <TT>ABABACABAAB</TT>can be
+composed from the set of primitives <pre>
+	   {A, AB, BA, CA, BBC}
+</pre>
+
+<p>The first K characters of S are the <i>prefix of S with length
+K</i>.  Write a program which accepts as input a set of primitives and
+a sequence of constituents and then computes the length of the longest
+prefix that can be composed from primitives.
+
+<h3>PROGRAM NAME: prefix</h3>
+
+<h3>INPUT FORMAT</h3>
+
+First, the input file contains the list (length 1..200) of primitives
+(length 1..10) expressed as a series of space-separated strings of
+upper-case characters on one or more lines. The list of primitives is
+terminated by a line that contains nothing more than a period (`.').
+No primitive appears twice in the list.
+
+Then, the input file contains a sequence S (length 1..200,000)
+expressed as one or more lines, none of which exceeds 76 letters
+in length. The "newlines" (line terminators) are not part of the
+string S.
+
+<h3>SAMPLE INPUT (file prefix.in) </h3>
+
+<pre>
+A AB BA CA BBC
+.
+ABABACABAABC
+</pre>
+
+<h3>OUTPUT FORMAT</h3>
+
+A single line containing an integer that is the length of the longest
+prefix that can be composed from the set P.
+
+<h3>SAMPLE OUTPUT (file prefix.out)</h3>
+
+<pre>
+11
+</pre>
+<br>
+<div style='width:6.25in;background-color:#FFFFCC;border:1px solid black;'>
+<form action="/upload3" enctype="multipart/form-data" method="post"
+	style='margin-bottom:0px;'>
+<center>
+<table>
+<tr><td colspan=2><b>Submit a solution:</b></td></tr>
+<tr><td style='width:0.75in;'>&nbsp;</td><td>
+<input type="file" name="filename">
+<input type="submit" VALUE="Send it in!">
+<input type="hidden" name="a" value=1yymk9rnt0G>
+<input type="hidden" name="S" value=prefix>
+</td></tr>
+</table>
+</center>
+</div>
+</form>
+
+<div style='margin-top:1em;width:6.25in;padding:8px;background-color:white;border:1px solid black;'>
+<center>
+<a href="/usacogate?a=1yymk9rnt0G">Training Gateway</a> &nbsp;| &nbsp;
+<a href="mailto:rob.kolstad@gmail.com">Comment or Question </a>
+</center>
+</div>
+</body>
+</html>

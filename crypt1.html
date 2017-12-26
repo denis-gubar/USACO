@@ -1,0 +1,118 @@
+<html>
+<head> <title>Prime Cryptarithm</title> </head>
+<body background="/usaco/bg3.jpg">
+<img src="/usaco/cow1.jpg" width="742" height="118">
+<center>
+<b><font size="7">Prime Cryptarithm</font></b><br>
+</center>
+
+<p> The following cryptarithm is a multiplication problem that can be
+solved by substituting digits from a specified set of N digits into the
+positions marked with *. If the set of prime digits {2,3,5,7} is
+selected, the cryptarithm is called a PRIME CRYPTARITHM.
+<pre>
+      * * *
+   x    * *
+    -------
+      * * *         <-- partial product 1
+    * * *           <-- partial product 2
+    -------
+    * * * *
+</pre>
+Digits can appear only in places marked by `*'.  Of course, leading
+zeroes are not allowed.
+<p>
+<b>The partial products must be three digits long</b>, even though the
+general case (see below) might have four digit partial products.
+
+<br><br>
+********** Note About Cryptarithm's Multiplication ************
+<br>
+In USA, children are taught to perform multidigit multiplication
+as described here. Consider multiplying a three digit number
+whose digits are 'a', 'b', and 'c' by a two digit number whose
+digits are 'd' and 'e':
+<pre>
+[Note that this diagram shows far more digits in its results than
+the required diagram above which has three digit partial products!]
+
+          a b c     <-- number 'abc'
+        x   d e     <-- number 'de'; the 'x' means 'multiply'
+     -----------
+p1      * * * *     <-- product of e * abc; first star might be 0 (absent)
+p2    * * * *       <-- product of d * abc; first star might be 0 (absent)
+     -----------
+      * * * * *     <-- sum of p1 and p2 (e*abc + 10*d*abc) == de*abc
+
+</pre>
+
+<p>Note that the 'partial products' are as taught in USA schools.
+The first partial product is the product of the final digit of the
+second number and the top number.  The second partial product is
+the product of the first digit of the second number and the top
+number.
+
+<P> Write a program that will find all solutions to the cryptarithm
+above for any subset of supplied non-zero single-digits.
+
+<h3>PROGRAM NAME: crypt1</h3>
+
+<h3>INPUT FORMAT</h3>
+
+<table border="1">
+<tr> <td> Line 1: </td> <td> N, the number of digits that will be used</td>
+<tr> <td> Line 2: </td> <td>N space separated non-zero digits with which to solve the cryptarithm </td>
+</table>
+
+<h3>SAMPLE INPUT (file crypt1.in) </h3>
+
+<pre>
+5
+2 3 4 6 8
+</pre>
+
+<h3>OUTPUT FORMAT</h3>
+
+<p>A single line with the total number of solutions.  Here
+is the single solution for the sample input:
+<pre>
+      2 2 2
+    x   2 2
+     ------
+      4 4 4
+    4 4 4
+  ---------
+    4 8 8 4
+</pre>
+
+<h3>SAMPLE OUTPUT (file crypt1.out)</h3>
+
+<pre>
+1
+</pre>
+<br>
+<div style='width:6.25in;background-color:#FFFFCC;border:1px solid black;'>
+<form action="/upload3" enctype="multipart/form-data" method="post"
+	style='margin-bottom:0px;'>
+<center>
+<table>
+<tr><td colspan=2><b>Submit a solution:</b></td></tr>
+<tr><td style='width:0.75in;'>&nbsp;</td><td>
+<input type="file" name="filename">
+<input type="submit" VALUE="Send it in!">
+<input type="hidden" name="a" value=1yymk9rnt0G>
+<input type="hidden" name="S" value=crypt1>
+</td></tr>
+</table>
+</center>
+</div>
+</form>
+
+<div style='margin-top:1em;width:6.25in;padding:8px;background-color:white;border:1px solid black;'>
+<center>
+<a href="/usacogate?a=1yymk9rnt0G">Training Gateway</a> &nbsp;| &nbsp;
+<a href="mailto:rob.kolstad@gmail.com">Comment or Question </a>
+</center>
+</div>
+</body>
+</html>
